@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    body{
+        margin: 100px;
+    }
+
+    fieldset{
+        height: auto;
+        width: 80%;
+    }
+        
+    .submit{
+        background-color: skyblue;
+        }
+        
+    .reset{
+        background-color: firebrick;
+        }
+</style>
+<body>
+    <fieldset>
+    <table>  
+        <legend><b>Kelola Montir/Mekanik</b></legend>
+       <tr>
+        <td>Nama Mekanik</td>
+        <td><input type="text"></td>
+       </tr>
+
+       <tr>
+        <td>Kategori</td>
+        <td>
+            <select>
+              <option>Senior mekanik</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+        </td>
+       </tr>
+
+       <tr>
+        <td>Deskripsi Skill</td>
+        <td><textarea cols="22" rows="3" ></textarea></td>
+       </tr>
+
+       <tr>
+        <td>Kemampuan</td>
+        <td><input type="radio">Service Ringan</td>
+        <td><input type="radio">Service Besar</td>
+        <td><input type="radio">Body Repair</td>
+       </tr>
+
+       <tr>
+        <td>Tempat, Tanggal Lahir</td>
+        <td><input type="text"></td>
+        <td><input type="Date"></td>
+       </tr>
+       
+       <tr>
+        <td>Telepon</td>
+        <td><input type="number"></td>
+       </tr>
+
+       <tr>
+        <td for="foto">Upload foto</td>
+        <td>
+            <input  type="file" id="photo" name="photo"accept="image/*">
+        </td>
+       </tr>
+    </table>
+
+       <tr>
+        <td><input type="submit" class="submit" name="submit" value="Simpan"/>
+        <input type="reset" name="reset" class="reset" value="Reset" /></td>
+       </tr>
+
+    </fieldset>
+
+</body>
+</html>
